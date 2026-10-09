@@ -24,7 +24,21 @@
     'Estimate the impact of preventing downtime.':'Estima el impacto de prevenir tiempos de inactividad.', 'Use your own values to create an indicative monthly savings projection.':'Usa tus valores para crear una proyección mensual de ahorro referencial.',
     'Assets in your fleet':'Activos en tu flota', 'Estimated cost per downtime hour (S/)':'Costo estimado por hora detenida (S/)',
     'Avoidable hours per asset / month':'Horas evitables por activo / mes', 'Calculate savings':'Calcular ahorro', 'Enter your values to calculate.':'Ingresa tus valores para calcular.',
-    'Smart fleet management':'Gestión inteligente de flotas', 'Change language':'Cambiar idioma'
+    'Smart fleet management':'Gestión inteligente de flotas', 'Change language':'Cambiar idioma',
+    'Sign in to platform':'Ingresar a la plataforma', 'Create account and enter':'Crear cuenta y entrar',
+    'Corporate email':'Correo corporativo', 'Password':'Contraseña', 'Confirm password':'Confirmar contraseña',
+    'Full name':'Nombre completo', 'Company':'Empresa', 'Operational role':'Rol operativo',
+    'Fleet Administrator':'Administrador de flota', 'Operations Coordinator':'Coordinador de operaciones',
+    'Maintenance Technician':'Técnico de mantenimiento', 'Contractor':'Contratista',
+    'Quick demo access:':'Acceso demo rápido:',
+    'Do not have an account? Register here':'¿No tienes cuenta? Regístrate aquí',
+    'Already have an account? Sign in':'¿Ya tienes una cuenta? Inicia sesión',
+    'Go to WebApp directly ↗':'Ir a la WebApp directamente ↗',
+    'Invalid email or password.':'Correo o contraseña incorrectos.',
+    'Please fill in all fields.':'Por favor completa todos los campos.',
+    'Passwords do not match.':'Las contraseñas no coinciden.',
+    'Password must be at least 6 characters.':'La contraseña debe tener al menos 6 caracteres.',
+    'This email is already registered.':'Este correo ya se encuentra registrado.'
   };
   let language = localStorage.getItem('technoload-website-language') || 'es';
   const preserve = (text, value) => text.replace(text.trim(), value);
