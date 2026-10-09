@@ -12,18 +12,191 @@
   <header class="header">
     <a class="brand" href="#home"><span>T</span>TechnoLoad</a>
     <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú"><span></span><span></span><span></span></button>
-    <nav id="main-nav" aria-label="Navegación principal"><a href="#features">Features</a><a href="#solutions">Solutions</a><a href="#plans">Memberships</a><a href="#roi">ROI</a><a class="mobile-auth" href="https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/">Sign in</a><a class="mobile-auth" href="mailto:soporte@technoload.pe?subject=Solicitud%20de%20registro%20TechnoLoad">Create account</a></nav>
+    <nav id="main-nav" aria-label="Navegación principal">
+      <a href="#features">Features</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#plans">Memberships</a>
+      <a href="#roi">ROI</a>
+      <a class="mobile-auth" href="../TechFlow-Webapp/hosting/index.html#login" data-auth="login">Sign in</a>
+      <a class="mobile-auth" href="../TechFlow-Webapp/hosting/index.html#register" data-auth="register">Create account</a>
+    </nav>
     <button id="language-switch" class="button ghost language-switch" type="button" aria-label="Cambiar idioma">EN</button>
-    <a class="button ghost login-link" href="https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/">Sign in</a>
-    <a class="button primary header-signup" href="mailto:soporte@technoload.pe?subject=Solicitud%20de%20registro%20TechnoLoad">Create account</a>
+    <a class="button ghost login-link" href="../TechFlow-Webapp/hosting/index.html#login" data-auth="login">Sign in</a>
+    <a class="button primary header-signup" href="../TechFlow-Webapp/hosting/index.html#register" data-auth="register">Create account</a>
   </header>
   <main>
-    <section id="home" class="hero"><div class="hero-copy"><p class="eyebrow"><span class="eyebrow-dot"></span>SAAS FOR FIELD OPERATIONS</p><h1>Control your fleet before downtime stops your operation.</h1><p class="lead">Centralize machinery, vehicles, hour meters, preventive maintenance, rentals and dispatches in one platform built for teams that cannot stop.</p><div class="actions"><a class="button primary" href="https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/">Enter the platform <span aria-hidden="true">↗</span></a><a class="button ghost" href="#plans">Explore memberships</a></div><p class="hero-note"><span aria-hidden="true">✓</span> Fleet, maintenance and dispatch in one place</p></div><aside class="dashboard-preview"><p><span><i class="live-dot"></i>Operations dashboard</span><small>Updated now</small></p><div class="preview-grid"><article><b>12</b><span>assets available</span></article><article><b>07</b><span>services on route</span></article><article><b>03</b><span>alerts pending</span></article></div><div class="preview-bottom"><div class="meter"><span>Operational availability</span><b>92%</b><i><em></em></i></div><div class="trend-card"><span>Fleet status</span><strong><i></i><i></i><i></i><i></i><i></i><i></i><i></i></strong></div></div><span class="preview-glow" aria-hidden="true"></span></aside></section>
-    <section id="features" class="section"><p class="eyebrow">EVERYTHING UNDER CONTROL</p><h2>Your operation, connected end to end.</h2><div class="cards"><article><strong>⌛</strong><h3>Meter-based maintenance</h3><p>Anticipate preventive service and reduce unplanned downtime.</p></article><article><strong>▣</strong><h3>Conflict-free rentals</h3><p>Approve rental requests with a clear view of availability.</p></article><article><strong>⌖</strong><h3>Traceable operations</h3><p>Record working hours, services and activity for every unit.</p></article></div></section>
-    <section id="solutions" class="section dark"><p class="eyebrow">BUILT FOR YOUR OPERATION</p><h2>Two workflows, one source of truth.</h2><div class="solutions"><article><h3>Fleet administration</h3><ul><li>Asset and hour-meter control</li><li>Maintenance orders and alerts</li><li>Availability for rental or operations</li></ul><a href="https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/#fleet">Manage fleet →</a></article><article><h3>Load logistics</h3><ul><li>Unit assignments</li><li>Routes and scheduled dispatches</li><li>Service tracking</li></ul><a href="https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/#operations">View operations →</a></article></div></section>
-    <section id="plans" class="section plans"><p class="eyebrow">MEMBERSHIPS</p><h2>A plan that fits every operation.</h2><p class="section-copy">Choose a demo membership. You can view and change the active plan from the web application at any time.</p><div class="plan-grid"><article class="plan"><h3>Starter</h3><p class="price">S/ 149 <small>/ month</small></p><p>For small fleets getting started with digital control.</p><ul><li>Up to 10 assets</li><li>Fleet inventory</li><li>Maintenance calendar</li></ul><a class="button ghost" href="https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/#memberships">Choose Starter</a></article><article class="plan featured"><p class="plan-label">MOST POPULAR</p><h3>Professional</h3><p class="price">S/ 349 <small>/ month</small></p><p>For growing operations that need full visibility.</p><ul><li>Up to 50 assets</li><li>Rentals and dispatches</li><li>Operational reports</li></ul><a class="button primary" href="https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/#memberships">Choose Professional</a></article><article class="plan"><h3>Enterprise</h3><p class="price">Custom</p><p>For large organizations and multi-site operations.</p><ul><li>Unlimited assets</li><li>Priority support</li><li>Custom integrations</li></ul><a class="button ghost" href="mailto:soporte@technoload.pe?subject=Enterprise%20membership">Talk to sales</a></article></div></section>
-    <section id="roi" class="section roi"><div><p class="eyebrow">ROI CALCULATOR</p><h2>Estimate the impact of preventing downtime.</h2><p>Use your own values to create an indicative monthly savings projection.</p></div><form id="roi-form"><label>Assets in your fleet<input id="assets" type="number" min="1" value="12" required></label><label>Estimated cost per downtime hour (S/)<input id="cost" type="number" min="1" value="180" required></label><label>Avoidable hours per asset / month<input id="hours" type="number" min="0" step="0.5" value="2" required></label><button class="button primary" type="submit">Calculate savings</button><output id="roi-result" aria-live="polite">Enter your values to calculate.</output></form></section>
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span>SAAS FOR FIELD OPERATIONS</p>
+        <h1>Control your fleet before downtime stops your operation.</h1>
+        <p class="lead">Centralize machinery, vehicles, hour meters, preventive maintenance, rentals and dispatches in one platform built for teams that cannot stop.</p>
+        <div class="actions">
+          <a class="button primary enter-webapp-btn" href="../TechFlow-Webapp/hosting/index.html">Enter the platform <span aria-hidden="true">↗</span></a>
+          <a class="button ghost" href="#plans">Explore memberships</a>
+        </div>
+        <p class="hero-note"><span aria-hidden="true">✓</span> Fleet, maintenance and dispatch in one place</p>
+      </div>
+      <aside class="dashboard-preview">
+        <p><span><i class="live-dot"></i>Operations dashboard</span><small>Updated now</small></p>
+        <div class="preview-grid">
+          <article><b>12</b><span>assets available</span></article>
+          <article><b>07</b><span>services on route</span></article>
+          <article><b>03</b><span>alerts pending</span></article>
+        </div>
+        <div class="preview-bottom">
+          <div class="meter"><span>Operational availability</span><b>92%</b><i><em></em></i></div>
+          <div class="trend-card"><span>Fleet status</span><strong><i></i><i></i><i></i><i></i><i></i><i></i><i></i></strong></div>
+        </div>
+        <span class="preview-glow" aria-hidden="true"></span>
+      </aside>
+    </section>
+    <section id="features" class="section">
+      <p class="eyebrow">EVERYTHING UNDER CONTROL</p>
+      <h2>Your operation, connected end to end.</h2>
+      <div class="cards">
+        <article><strong>⌛</strong><h3>Meter-based maintenance</h3><p>Anticipate preventive service and reduce unplanned downtime.</p></article>
+        <article><strong>▣</strong><h3>Conflict-free rentals</h3><p>Approve rental requests with a clear view of availability.</p></article>
+        <article><strong>⌖</strong><h3>Traceable operations</h3><p>Record working hours, services and activity for every unit.</p></article>
+      </div>
+    </section>
+    <section id="solutions" class="section dark">
+      <p class="eyebrow">BUILT FOR YOUR OPERATION</p>
+      <h2>Two workflows, one source of truth.</h2>
+      <div class="solutions">
+        <article>
+          <h3>Fleet administration</h3>
+          <ul><li>Asset and hour-meter control</li><li>Maintenance orders and alerts</li><li>Availability for rental or operations</li></ul>
+          <a class="webapp-route" data-route="#fleet" href="../TechFlow-Webapp/hosting/index.html#fleet">Manage fleet →</a>
+        </article>
+        <article>
+          <h3>Load logistics</h3>
+          <ul><li>Unit assignments</li><li>Routes and scheduled dispatches</li><li>Service tracking</li></ul>
+          <a class="webapp-route" data-route="#operations" href="../TechFlow-Webapp/hosting/index.html#operations">View operations →</a>
+        </article>
+      </div>
+    </section>
+    <section id="plans" class="section plans">
+      <p class="eyebrow">MEMBERSHIPS</p>
+      <h2>A plan that fits every operation.</h2>
+      <p class="section-copy">Choose a demo membership. You can view and change the active plan from the web application at any time.</p>
+      <div class="plan-grid">
+        <article class="plan">
+          <h3>Starter</h3>
+          <p class="price">S/ 149 <small>/ month</small></p>
+          <p>For small fleets getting started with digital control.</p>
+          <ul><li>Up to 10 assets</li><li>Fleet inventory</li><li>Maintenance calendar</li></ul>
+          <a class="button ghost webapp-route" data-route="#memberships" href="../TechFlow-Webapp/hosting/index.html#memberships">Choose Starter</a>
+        </article>
+        <article class="plan featured">
+          <p class="plan-label">MOST POPULAR</p>
+          <h3>Professional</h3>
+          <p class="price">S/ 349 <small>/ month</small></p>
+          <p>For growing operations that need full visibility.</p>
+          <ul><li>Up to 50 assets</li><li>Rentals and dispatches</li><li>Operational reports</li></ul>
+          <a class="button primary webapp-route" data-route="#memberships" href="../TechFlow-Webapp/hosting/index.html#memberships">Choose Professional</a>
+        </article>
+        <article class="plan">
+          <h3>Enterprise</h3>
+          <p class="price">Custom</p>
+          <p>For large organizations and multi-site operations.</p>
+          <ul><li>Unlimited assets</li><li>Priority support</li><li>Custom integrations</li></ul>
+          <a class="button ghost" href="mailto:soporte@technoload.pe?subject=Enterprise%20membership">Talk to sales</a>
+        </article>
+      </div>
+    </section>
+    <section id="roi" class="section roi">
+      <div>
+        <p class="eyebrow">ROI CALCULATOR</p>
+        <h2>Estimate the impact of preventing downtime.</h2>
+        <p>Use your own values to create an indicative monthly savings projection.</p>
+      </div>
+      <form id="roi-form">
+        <label>Assets in your fleet<input id="assets" type="number" min="1" value="12" required></label>
+        <label>Estimated cost per downtime hour (S/)<input id="cost" type="number" min="1" value="180" required></label>
+        <label>Avoidable hours per asset / month<input id="hours" type="number" min="0" step="0.5" value="2" required></label>
+        <button class="button primary" type="submit">Calculate savings</button>
+        <output id="roi-result" aria-live="polite">Enter your values to calculate.</output>
+      </form>
+    </section>
   </main>
+
+  <dialog id="auth-modal">
+    <div class="modal-auth-container">
+      <div class="modal-auth-header">
+        <div class="brand"><span>T</span>TechnoLoad</div>
+        <button id="modal-close" class="modal-close-btn" type="button" aria-label="Close">×</button>
+      </div>
+      <div class="modal-auth-tabs">
+        <button id="tab-login" class="modal-tab-btn active" type="button" data-tab="login">Sign in</button>
+        <button id="tab-register" class="modal-tab-btn" type="button" data-tab="register">Create account</button>
+      </div>
+
+      <div id="modal-alert" class="modal-alert error" style="display:none;"></div>
+
+      <form id="modal-login-form" class="modal-auth-form">
+        <div class="modal-form-group">
+          <label for="m-email">Corporate email</label>
+          <input id="m-email" type="email" required placeholder="admin@technoload.pe" value="admin@technoload.pe" autocomplete="username">
+        </div>
+        <div class="modal-form-group">
+          <label for="m-pass">Password</label>
+          <input id="m-pass" type="password" required placeholder="••••••••" value="admin123" autocomplete="current-password">
+        </div>
+        <button class="button primary" style="width:100%;margin-top:6px;" type="submit">Sign in to platform</button>
+        
+        <div class="modal-demo-box">
+          <div class="modal-demo-header">⚡ Quick demo access:</div>
+          <div class="modal-demo-chips">
+            <button type="button" class="modal-demo-chip" data-fill-email="admin@technoload.pe" data-fill-pass="admin123">Flor Álvarez (Admin)</button>
+            <button type="button" class="modal-demo-chip" data-fill-email="mathias@technoload.pe" data-fill-pass="mathias123">Mathias Castillo (Admin)</button>
+            <button type="button" class="modal-demo-chip" data-fill-email="operaciones@technoload.pe" data-fill-pass="operaciones123">Marco López (Ops)</button>
+          </div>
+        </div>
+        <div class="modal-auth-links">
+          <button id="switch-to-register" type="button">Do not have an account? Register here</button>
+          <a class="direct-webapp-link" href="../TechFlow-Webapp/hosting/index.html#login">Go to WebApp directly ↗</a>
+        </div>
+      </form>
+
+      <form id="modal-register-form" class="modal-auth-form" style="display:none;">
+        <div class="modal-form-group">
+          <label for="m-reg-name">Full name</label>
+          <input id="m-reg-name" type="text" required placeholder="e.g. Mathias Castillo">
+        </div>
+        <div class="modal-form-group">
+          <label for="m-reg-email">Corporate email</label>
+          <input id="m-reg-email" type="email" required placeholder="mathias@constructora.pe" autocomplete="email">
+        </div>
+        <div class="modal-form-group">
+          <label for="m-reg-company">Company</label>
+          <input id="m-reg-company" type="text" required placeholder="e.g. Constructora Andina S.A.">
+        </div>
+        <div class="modal-form-group">
+          <label for="m-reg-role">Operational role</label>
+          <select id="m-reg-role">
+            <option value="Fleet Administrator">Fleet Administrator</option>
+            <option value="Operations Coordinator">Operations Coordinator</option>
+            <option value="Maintenance Technician">Maintenance Technician</option>
+            <option value="Contractor">Contractor</option>
+          </select>
+        </div>
+        <div class="modal-form-group">
+          <label for="m-reg-pass">Password</label>
+          <input id="m-reg-pass" type="password" minlength="6" required placeholder="At least 6 characters" autocomplete="new-password">
+        </div>
+        <div class="modal-form-group">
+          <label for="m-reg-pass-confirm">Confirm password</label>
+          <input id="m-reg-pass-confirm" type="password" minlength="6" required placeholder="Repeat password" autocomplete="new-password">
+        </div>
+        <button class="button primary" style="width:100%;margin-top:6px;" type="submit">Create account and enter</button>
+        <div class="modal-auth-links">
+          <button id="switch-to-login" type="button">Already have an account? Sign in</button>
+          <a class="direct-webapp-link" href="../TechFlow-Webapp/hosting/index.html#register">Go to WebApp directly ↗</a>
+        </div>
+      </form>
+    </div>
+  </dialog>
+
   <footer><span>© <span id="year">2026</span> TechnoLoad · Smart fleet management</span><a href="mailto:soporte@technoload.pe">soporte@technoload.pe</a></footer>
   <script src="i18n.js"></script>
   <script src="app.js"></script>
