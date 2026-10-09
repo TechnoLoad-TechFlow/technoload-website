@@ -6,8 +6,8 @@ document.querySelector('#roi-form').addEventListener('submit', (event) => {
   const language = window.TechnoLoadWebsiteI18n?.language() || 'es';
   const savings = (assets * cost * hours).toLocaleString(language === 'es' ? 'es-PE' : 'en-US');
   document.querySelector('#roi-result').textContent = language === 'es'
-      ? `Ahorro potencial estimado: S/ ${savings} por mes.`
-      : `Estimated potential savings: S/ ${savings} per month.`;
+    ? `Ahorro potencial estimado: S/ ${savings} por mes.`
+    : `Estimated potential savings: S/ ${savings} per month.`;
 });
 
 const menuToggle = document.querySelector('#menu-toggle');
