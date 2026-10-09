@@ -1,6 +1,6 @@
 (() => {
   const es = {
-    'Features':'Funciones', 'Solutions':'Soluciones', 'Memberships':'Membresías', 'Sign in':'Ingresar',
+    'Features':'Funciones', 'Solutions':'Soluciones', 'Memberships':'Membresías', 'Sign in':'Ingresar', 'Create account':'Crear cuenta',
     'SAAS FOR FIELD OPERATIONS':'SAAS PARA OPERACIONES DE CAMPO', 'Control your fleet before downtime stops your operation.':'Controla tu flota antes de que una parada detenga tu operación.',
     'Centralize machinery, vehicles, hour meters, preventive maintenance, rentals and dispatches in one platform built for teams that cannot stop.':'Centraliza maquinaria, vehículos, horómetros, mantenimiento preventivo, alquileres y despachos en una plataforma para equipos que no pueden detenerse.',
     'Enter the platform':'Entrar a la plataforma', 'Explore memberships':'Explorar membresías', 'Operations dashboard':'Panel operativo', 'Updated now':'Actualizado ahora',
@@ -26,13 +26,17 @@
     'Avoidable hours per asset / month':'Horas evitables por activo / mes', 'Calculate savings':'Calcular ahorro', 'Enter your values to calculate.':'Ingresa tus valores para calcular.',
     'Smart fleet management':'Gestión inteligente de flotas', 'Change language':'Cambiar idioma'
   };
-  let language = localStorage.getItem('technoload-website-language') || 'en';
+  let language = localStorage.getItem('technoload-website-language') || 'es';
   const preserve = (text, value) => text.replace(text.trim(), value);
   function translate() {
     document.documentElement.lang = language;
     const switcher = document.querySelector('#language-switch');
     switcher.textContent = language === 'es' ? 'EN' : 'ES';
     switcher.setAttribute('aria-label', language === 'es' ? 'Cambiar idioma' : 'Change language');
+    document.title = language === 'es' ? 'TechnoLoad | Gestión inteligente de flotas' : 'TechnoLoad | Smart fleet management';
+    document.querySelector('nav[aria-label]').setAttribute('aria-label', language === 'es' ? 'Navegación principal' : 'Primary navigation');
+    const menu = document.querySelector('#menu-toggle');
+    if (menu) menu.setAttribute('aria-label', language === 'es' ? 'Abrir menú' : 'Open menu');
     if (language !== 'es') return;
     const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
     const nodes = [];
